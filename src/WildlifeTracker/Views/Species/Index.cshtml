@@ -1,0 +1,15 @@
+﻿@model IEnumerable<WildlifeTracker.Models.Species>
+
+<h2>To Do List</h2>
+<h4>@Html.DisplayNameFor(model => model.Name)</h4>
+<ul>
+    @foreach (var listSpecies in Model)
+    {
+        <li>
+            @Html.DisplayFor(modelSpecies => listSpecies.Name)  @Html.ActionLink("Details", "Details", new { id = listSpecies.SpeciesId }) | @Html.ActionLink("Edit", "Edit", new { id = listSpecies.SpeciesId }) | @Html.ActionLink("Delete", "Delete", new { id = listSpecies.SpeciesId })
+        </li>
+    }
+</ul>
+<p>@Html.ActionLink("Add new item", "Create")</p>
+<p>@Html.ActionLink("View all sightings", "Index", "Sighting")</p>
+

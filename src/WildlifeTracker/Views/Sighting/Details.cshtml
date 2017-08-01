@@ -1,0 +1,8 @@
+﻿@model WildlifeTracker.Models.Sighting
+<h2>Sighting Details</h2>
+<hr />
+@Html.DisplayNameFor(model => model.Date): @Html.DisplayFor(model => model.Date)
+@Html.DisplayNameFor(model => model.Latitude): @Html.DisplayFor(model => model.Latitude)
+@Html.DisplayNameFor(model => model.Longitude): @Html.DisplayFor(model => model.Longitude)
+
+<p>@Html.ActionLink("Edit", "Edit", new { id = Model.SightingId })</p>@Html.ActionLink("Back to List", "Index")</p>

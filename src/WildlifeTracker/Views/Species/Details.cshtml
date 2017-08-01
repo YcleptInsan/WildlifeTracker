@@ -1,0 +1,9 @@
+﻿@model WildlifeTracker.Models.Species
+<h2>Details</h2>
+<hr />
+@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+@*@Html.DisplayNameFor(model => model.Sighting): @Html.DisplayFor(model => model.Sighting)*@
+<hr />
+@Html.DisplayNameFor(model => model.Sighting): @Html.ListBox("Sighting")
+
+<p>@Html.ActionLink("Back to list", "Index")</p>
